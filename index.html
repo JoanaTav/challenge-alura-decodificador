@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador e Decodificador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/lupa.icon.png" alt="ícone de uma lupa na cor azul">
+</head>
+<body>
+    <main class="main container">
+        <header class="cabecalho">
+            <img src="./assets/logo Alura.svg" alt="logo da Alura no formato de um A na cor azul">
+            <h1>Confira o resultado da sua mensagem:</h1>
+        </header>
+
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-texto" rows="4" cols="40" style="width: 400px; height: 400px;" placeholder="digite aqui o seu texto"></textarea>
+                <strong><p>ATENÇÃO: Use apenas letras minúsculas e sem acentos!</p></strong>
+            </div>
+
+            <div id="output">
+                <img src="./assets/illustration.jpg" alt="Imagem cartoon 3D de uma mulher olhando uma folha de papel com uma lupa">
+                <h2>A sua mensagem secreta aparecerá aqui</h2>
+            </div>
+        </div>   
+        
+        <div class="buttons">
+            <div class="container-btn">
+                <button onclick="criptografar()" class="btn-criptografar"><strong>Criptografar</strong></button>
+                <button onclick="descriptografar()" class="btn-descriptografar"><strong>Descriptografar</strong></button>
+                <button onclick="copiar()" class="btn-descriptografar"><strong>Copiar Resultado</strong></button>
+                <button onclick="limpar()" class="btn-limpar"><strong>Limpar</strong></button>
+            </div> 
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <a href="https://www.linkedin.com/in/joana-tavares-dev/" class="icon">
+            <img src="./assets/linkedin-logo.png" alt="Ícone do linkedin">
+            <a href="https://github.com/JoanaTav" class="icon">
+                <img src="./assets/github-logo.png" alt="Ícone do Github"> 
+        </a>
+        <h5>Made by Joana Tavares ⋅ Challenge Alura ⋅ 2024</h5>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

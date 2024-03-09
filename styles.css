@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Madimi+One&display=swap');
+
+:root {
+    --cor-primaria: #CFF5E7;
+    --cor-secundaria: #0D4C92;
+    --cor-terciaria: #59C1BD;
+    --fonte-primaria: "Jost", sans-serif;
+    --fonte-secundaria: 'Madimi One', sans-serif;
+}
+
+body {
+   box-sizing: border-box; 
+   background: linear-gradient(to bottom right, #59C1BD, #0D4C92);
+   background-size: cover;
+   cursor: url('./assets/lupa.icon.png'), auto;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.cabecalho {
+     display: flex;
+     justify-content: space-between;
+     padding: 2%;
+     font-family: var(--fonte-secundaria);
+     color: var(--cor-secundaria);
+}
+ 
+.cabecalho img {
+    max-width: 100px;
+    max-height: 100px;
+    width: auto;
+    height: auto;
+}
+
+.container-input {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0 0 4%;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+}
+
+.container-input .input {
+     width: 400px;
+     height: 400px;
+     color: var(--cor-primaria);
+}
+
+#input-texto {
+    width: inherit;
+    height: inherit;
+    font-size: 24px;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-terciaria);
+    background: var(--cor-primaria);
+    box-shadow: none;
+    border: 3px solid var(--cor-secundaria);
+    border-radius: 20px;
+    outline: 0;
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+#output {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--cor-secundaria);
+    background: var(--cor-primaria);
+    border-radius: 20px;
+    width: 500px;
+    height: 500px;
+    margin-right: 2%;
+}
+
+#output h2 {
+    text-align: left;
+    font-family: var(--fonte-primaria);
+    font-size: 22px;
+    color: var(--cor-terciaria);
+    margin: auto;
+}
+
+#output span {
+    font-family: var(--fonte-primaria);
+    font-size: 16px;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+
+#output img {
+    display: block;
+    max-width: 350px;
+    max-width: 350px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.container-btn button {
+    display: inline;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    color: var(--cor-secundaria);
+    width: 150px;
+    height: 50px;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.btn-copiar {
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    font-size: 16px;
+    color: var(--cor-secundaria);
+    width: 150px;
+    height: 50px;
+    margin-left: 2%;
+    cursor: pointer;
+}
+
+.container-btn button:hover {
+     background-color: var(--cor-terciaria);
+     transition: 0.5s all;
+}
+
+
+.rodape {
+    display: fixed;
+    box-sizing: border-box;
+    margin-top: 100px;
+    bottom: 0;
+    width: 100%;
+    color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
+    padding: 14px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 768px) {
+    .container-input {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-input .input {
+        width: 100%;
+    }
+
+    #input-texto {
+        width: 50%; 
+        height: 200px; 
+    } 
+
+    #output {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .container-btn button {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .btn-copiar {
+        margin-left: 0;
+        margin-top: 10px;
+    }    
+}
